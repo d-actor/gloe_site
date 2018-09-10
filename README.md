@@ -3,7 +3,9 @@
 </p>
 <h1 align="center">
   gloeband.com
+  <br/>
   gloe.bandcamp.com
+  <br/>
   facebook.com/gloeband
 </h1>
 
