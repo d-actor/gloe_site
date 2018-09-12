@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import {
+  Image,
+} from 'semantic-ui-react';
+import Logo from "../assets/images/logo.jpg";
 
 const Header = ({ siteTitle }) => (
   <div
@@ -8,6 +12,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: '1.45rem',
     }}
   >
+    <img src={Logo} size="" style={styles.logo} />
     <div
       style={{
         margin: '0 auto',
@@ -30,4 +35,12 @@ const Header = ({ siteTitle }) => (
   </div>
 )
 
+const styles = {
+  logo: {
+    height: '50%',
+    width: 'auto',
+  }
+}
+
 export default Header
+
