@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
       background: 'black',
       marginBottom: '1.45rem',
       display: 'flex',
+      height: '4em',
     }}
   >
     <Menu.Menu>
