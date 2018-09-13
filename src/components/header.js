@@ -11,9 +11,10 @@ const Header = ({ siteTitle }) => (
     style={{
       background: 'black',
       marginBottom: '1.45rem',
+      display: 'flex',
     }}
   >
-    <img src={Logo} size="" style={styles.logo} />
+    <img src={Logo} style={styles.logo} />
     <div
       style={{
         margin: '0 auto',
@@ -38,9 +39,9 @@ const Header = ({ siteTitle }) => (
 
 const styles = {
   logo: {
-    height: '5em',
+    height: '4em',
     width: 'auto',
-  }
+  },
 }
 
 export default Header
