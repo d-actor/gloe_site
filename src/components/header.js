@@ -37,6 +37,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <Menu.Menu style={{flex: 'right', display: 'flex', flexDirection: 'column'}}position="right">
+      <Link to="/contact/">
+        <Menu.Item name='Contact' style={styles.navText} />
+      </Link>
+    </Menu.Menu>
   </div>
 )
 
@@ -44,6 +49,9 @@ const styles = {
   logo: {
     height: '4em',
     width: 'auto',
+  },
+  navText: {
+    color: 'white',
   },
 }
 
