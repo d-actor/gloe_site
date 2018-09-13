@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import {
   Image,
+  Menu,
 } from 'semantic-ui-react';
 import Logo from "../assets/images/logo.jpg";
 
@@ -37,7 +38,7 @@ const Header = ({ siteTitle }) => (
 
 const styles = {
   logo: {
-    height: '50%',
+    height: '5em',
     width: 'auto',
   }
 }
