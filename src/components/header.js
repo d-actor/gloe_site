@@ -14,7 +14,9 @@ const Header = ({ siteTitle }) => (
       display: 'flex',
     }}
   >
-    <img src={Logo} style={styles.logo} />
+    <Menu.Menu>
+      <img src={Logo} style={styles.logo} />
+    </Menu.Menu>
     <div
       style={{
         margin: '0 auto',
