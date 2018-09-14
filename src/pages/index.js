@@ -1,10 +1,20 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import {
+  Segment,
+} from 'semantic-ui-react';
 
 const IndexPage = () => (
-  <div>
-    <Link to="/contact/">Contact</Link>
-  </div>
+  <Segment style={styles.main}>
+    Home page, info and shit
+  </Segment>
 )
 
-export default IndexPage
+const styles = {
+  main: {
+    color: '#fff',
+  },
+}
+
+export default IndexPage;
+
