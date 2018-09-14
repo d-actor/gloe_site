@@ -56,10 +56,13 @@ const styles = {
   navDiv: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
   },
   logo: {
-    height: '4em',
+    height: '3em',
     width: 'auto',
+    position: 'absolute',
+    top: '0',
   },
   logoContainer: {
     alignSelf: 'flex-start',
