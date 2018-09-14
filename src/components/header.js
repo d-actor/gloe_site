@@ -24,12 +24,8 @@ class Header extends React.Component {
   render() {
     const { siteTitle } = this.props;
     return (
-      <div
-        style={{
-          background: 'black',
-        }}
-      >
-        <Menu pointing secondary>
+      <div style={styles.navBar}>
+        <Menu style={styles.navDiv}>
           <Menu.Menu>
             <Link style={styles.logoContainer, styles.menuItem} to="/">
               <img src={Logo} style={styles.logo} />
@@ -55,7 +51,12 @@ class Header extends React.Component {
 
 const styles = {
   menuItem: {
-    maxWidth: '50%',
+    maxWidth: '33%',
+  },
+  navDiv: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
   },
   logo: {
     height: '4em',
@@ -72,10 +73,6 @@ const styles = {
   },
   navBar: {
     background: 'black',
-    display: 'flex',
-    flexDirection: 'row !important',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 }
 
