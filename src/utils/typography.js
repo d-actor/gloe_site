@@ -1,6 +1,12 @@
 import Typography from "typography";
 import irvingTheme from "typography-theme-irving";
 
+irvingTheme.overrideThemeStyles =({ rhythm }, options) => ({
+  'h1': {
+    fontWeight: '300',
+  },
+})
+
 const typography = new Typography(irvingTheme);
 
 // const typography = new Typography({

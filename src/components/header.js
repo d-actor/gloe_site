@@ -44,6 +44,7 @@ class Header extends React.Component {
                 style={{
                   color: 'white',
                   textDecoration: 'none',
+                  fontWeight: '300',
                 }}
               >
                 {siteTitle}
@@ -60,6 +61,11 @@ class Header extends React.Component {
 const styles = {
   menuItem: {
     maxWidth: '33%',
+    //TODO make this work
+    '&:hover': {
+      background: '#fff',
+      color: '#648880',
+    },
   },
   navDiv: {
     display: 'flex',
