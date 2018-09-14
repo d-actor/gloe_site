@@ -7,9 +7,10 @@ import {
 import Logo from "../assets/images/logo.jpg";
 
 class Header extends React.Component {
+
   navs = () => {
     return (
-      <Menu.Menu position='right' style={{color: 'white'}}>
+      <Menu.Menu position='right' style={styles.menu, styles.menuItem}>
         <Link to='/contact/'>
           <Menu.Item style={{color: 'white'}} name='Contact' />
         </Link>
@@ -30,72 +31,51 @@ class Header extends React.Component {
       >
         <Menu pointing secondary>
           <Menu.Menu>
-            <img src={Logo} style={styles.logo} />
-          </Menu.Menu>
-          <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-              }}
-            >
-              {siteTitle}
+            <Link style={styles.logoContainer, styles.menuItem} to="/">
+              <img src={Logo} style={styles.logo} />
             </Link>
-          </h1>
-          { this.navs() }
+            <h1 style={styles.menuItem}>
+              <Link
+                to="/"
+                style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                }}
+              >
+                {siteTitle}
+              </Link>
+            </h1>
+            { this.navs() }
+          </Menu.Menu>
         </Menu>
       </div>
-      )
+    );
   }
 }
 
-//const Header = ({ siteTitle }) => (
-//  <div
-//    style={{
-//      background: 'black',
-//      marginBottom: '1.45rem',
-//      display: 'flex',
-//      height: '4em',
-//    }}
-//  >
-//    <Menu.Menu>
-//      <img src={Logo} style={styles.logo} />
-//    </Menu.Menu>
-//    <div
-//      style={{
-//        margin: '0 auto',
-//        maxWidth: 960,
-//        padding: '1.45rem 1.0875rem',
-//      }}
-//    >
-//      <h1 style={{ margin: 0 }}>
-//        <Link
-//          to="/"
-//          style={{
-//            color: 'white',
-//            textDecoration: 'none',
-//          }}
-//        >
-//          {siteTitle}
-//        </Link>
-//      </h1>
-//    </div>
-//    <Menu.Menu style={{flex: 'right'}}position="right">
-//      <Link to="/contact/">
-//        <Menu.Item name='Contact' style={styles.navText} />
-//      </Link>
-//    </Menu.Menu>
-//  </div>
-//)
-
 const styles = {
+  menuItem: {
+    maxWidth: '50%',
+  },
   logo: {
     height: '4em',
     width: 'auto',
   },
+  logoContainer: {
+    alignSelf: 'flex-start',
+  },
+  menu: {
+    alignSelf: 'flex-end',
+  },
   navText: {
     color: 'white',
+  },
+  navBar: {
+    background: 'black',
+    display: 'flex',
+    flexDirection: 'row !important',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }
 
