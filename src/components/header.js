@@ -52,6 +52,7 @@ class Header extends React.Component {
             { this.navs() }
           </Menu.Menu>
         </Menu>
+        <hr />
       </div>
     );
   }
