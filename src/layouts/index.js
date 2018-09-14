@@ -5,7 +5,7 @@ import Header from '../components/header'
 import favicon from './favicon.ico'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div style={styles.main}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -32,6 +32,12 @@ const Layout = ({ children, data }) => (
 
 Layout.propTypes = {
   children: PropTypes.func,
+}
+
+const styles = {
+  main: {
+    background: '#222222',
+  }
 }
 
 export default Layout

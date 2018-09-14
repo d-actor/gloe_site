@@ -89,7 +89,7 @@ const styles = {
     color: 'white',
   },
   navBar: {
-    background: 'black',
+    background: '#222222',
   },
 }
 
