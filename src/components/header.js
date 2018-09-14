@@ -10,20 +10,22 @@ class Header extends React.Component {
 
   navs = () => {
     return (
-      <Menu.Menu position='right' style={styles.menu, styles.menuItem}>
-        <Link to='/contact/'>
-          <Menu.Item style={{color: 'white'}} name='Contact' />
-        </Link>
-        <Link to='/music/'>
-          <Menu.Item name='Music' style={{color: 'white'}} />
-        </Link>
-        <Link to='/shop/'>
-          <Menu.Item name='Shop' style={{color: 'white'}} />
-        </Link>
-        <Link to='/events/'>
-          <Menu.Item name='Events' style={{color: 'white'}} />
-        </Link>
-      </Menu.Menu>
+      <div style={styles.menu}>
+        <Menu.Menu position='right' style={styles.menuItem, styles.navDiv}>
+          <Link to='/contact/'>
+	          <Menu.Item name='Contact' style={{color: 'white'}} />
+          </Link>
+          <Link to='/music/'>
+            <Menu.Item name='Music' style={{color: 'white'}} />
+          </Link>
+          <Link to='/shop/'>
+            <Menu.Item name='Shop' style={{color: 'white'}} />
+          </Link>
+          <Link to='/events/'>
+            <Menu.Item name='Events' style={{color: 'white'}} />
+          </Link>
+        </Menu.Menu>
+      </div>
     );
   }
 
@@ -75,6 +77,8 @@ const styles = {
   },
   menu: {
     alignSelf: 'flex-end',
+    width: '20%',
+    paddingRight: '1em',
   },
   navText: {
     color: 'white',
