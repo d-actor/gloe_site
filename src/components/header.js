@@ -17,6 +17,12 @@ class Header extends React.Component {
         <Link to='/music/'>
           <Menu.Item name='Music' style={{color: 'white'}} />
         </Link>
+        <Link to='/shop/'>
+          <Menu.Item name='Shop' style={{color: 'white'}} />
+        </Link>
+        <Link to='/events/'>
+          <Menu.Item name='Events' style={{color: 'white'}} />
+        </Link>
       </Menu.Menu>
     );
   }
