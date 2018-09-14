@@ -44,7 +44,6 @@ class Header extends React.Component {
                 style={{
                   color: 'white',
                   textDecoration: 'none',
-                  fontWeight: '300',
                 }}
               >
                 {siteTitle}
