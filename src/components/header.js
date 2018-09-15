@@ -24,6 +24,9 @@ class Header extends React.Component {
           <Link to='/events/'>
             <Menu.Item name='Events' style={{color: 'white'}} />
           </Link>
+          <Link to='/media/'>
+            <Menu.Item name="Media" style={{color: 'white'}} />
+          </Link>
         </Menu.Menu>
       </div>
     );
